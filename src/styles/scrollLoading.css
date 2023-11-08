@@ -1,0 +1,127 @@
+
+.waiting-line {
+    transform: rotateY(90deg);
+}
+.scrollWhiteTitle {
+animation: runWhiteTitle  0.5s linear  alternate;
+}
+
+.scrollWhiteTextRight {
+    animation: runWhiteTextRight 1s linear alternate;
+}
+@keyframes  runWhiteTextRight {
+    0% {
+        transform: rotateY(45deg);
+        color: rgba(255, 255, 255, 10%);
+    }
+
+    50% {
+        transform: rotateY(20deg);
+        color: rgba(255, 255, 255, 50%);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+        color: rgba(255, 255, 255, 100%);
+    }
+}
+.scrollBlackTitle {
+    animation: runBackTitle 1s linear alternate;
+}
+
+.scrollBlackTextTop {
+    animation: runBackTop 1s linear alternate;
+}
+.scrollWhiteTextTop {
+    animation: runWhiteTop 1s linear alternate;
+}
+.scrollBlackTextRight {
+    animation: runBackTextRight 1s linear alternate;
+}
+
+@keyframes runWhiteTitle {
+    0% {
+            transform: rotateX(90deg) rotate(15deg);
+            color: rgba(255, 255, 255, 10%);
+        }
+    
+        50% {
+            transform: rotateX(50deg) rotate(7deg);
+            color: rgba(255, 255, 255, 50%);
+        }
+        100% {
+            transform: rotateX(0deg) rotate(0deg);
+            color: rgba(255, 255, 255, 100%);
+        }
+}
+
+
+
+
+@keyframes runBackTitle {
+    0% {
+        transform: rotateX(90deg) rotate(-15deg) ;
+        color: rgba(000, 000, 000, 10%);
+    }
+
+    50% {
+        transform: rotateX(50deg) rotate(-7deg);
+        color: rgba(000, 000, 000, 50%);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotate(-0deg);
+        color: rgba(000, 000, 000, 100%);
+    }
+}
+@keyframes runBackTop {
+    0% {
+        transform: rotateY(-30deg);
+        color: rgba(000, 000, 000, 10%);
+    }
+
+    50% {
+        transform: rotateY(-15deg);
+        color: rgba(000, 000, 000, 50%);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+        color: rgba(000, 000, 000, 100%);
+    }
+}
+@keyframes runWhiteTop {
+    0% {
+        transform: rotateY(-45deg);
+        color: rgba(255, 255, 255, 10%);
+    }
+
+    50% {
+        transform: rotateY(-25deg);
+        color: rgba(255, 255, 255, 50%);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+        color: rgba(255, 255, 255, 100%);
+    }
+}
+
+
+
+@keyframes runBackTextRight {
+    0% {
+        transform: rotateX(-90deg);
+        color: rgba(000, 000, 000, 10%);
+    }
+
+    50% {
+        transform: rotateX(-45deg);
+        color: rgba(000, 000, 000, 50%);
+    }
+
+    100% {
+    transform: rotateX(0deg);
+        color: rgba(000, 000, 000, 100%);
+    }
+}

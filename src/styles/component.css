@@ -1,0 +1,235 @@
+
+.text-make-memories {
+    font-weight: 600;
+}
+
+.textAnimation {
+    animation: myfirst 0.5s linear alternate;
+}
+.textAnimation2 {
+    animation: myfirst 0.5s linear 1s alternate;
+}
+.textAnimation3 {
+    animation: myfirst 0.5s linear 2s alternate;
+}
+.make-menories div div span  {
+    font-weight: 600;
+    line-height: 1;
+}
+@keyframes myfirst {
+    0% {
+        transform: rotateX(90deg) rotate(-15deg);
+        color: rgba(000, 000, 000, 10%);
+    }
+    50% {
+        transform: rotateX(45deg) rotate(-10deg);
+        color: rgba(000, 000, 000, 50%);
+    }
+    100% {
+        transform: rotateX(0deg) rotate(0deg);
+        color: rgba(000, 000, 000, 100%);
+    }
+}
+.textAnimation4 {
+    animation: myfirstwhite 0.5s linear 1s alternate;
+}
+
+.textAnimation5 {
+    animation: myfirstwhite 0.5s linear 2s alternate;
+}
+@keyframes myfirstwhite {
+    0% {
+        transform: rotateX(90deg) rotate(15deg);
+        color: rgba(255, 255, 255, 10%);
+    }
+
+    25% {
+        transform: rotateX(70deg);
+    color: rgba(255, 255, 255, 30%) rotate(11deg);
+    }
+
+    50% {
+        transform: rotateX(50deg);
+        color: rgba(255, 255, 255, 50%) rotate(7deg);
+    }
+
+    75% {
+        transform: rotateX(30deg);
+        color: rgba(255, 255, 255, 70%) rotate(3deg);
+    }
+
+    100% {
+        transform:  rotateX(0deg);
+    color: rgba(255, 255, 255, 100%) rotate(0deg);
+    }
+}
+.retImg {
+
+    animation: resImg 0.5s linear   alternate;
+}
+.redImg {
+    animation: redImg 1s linear alternate;
+}
+@keyframes redImg {
+    0% {
+        margin-left: 300px;
+    }
+
+    50% {
+        margin-left: 150px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes resImg {
+    0% {
+        margin-left: -20px;
+    }
+
+    50% {
+        margin-left: -10px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+.nextImg,.nullImg {
+    border: none;
+    position: relative;
+    display: inline-block;
+    border: none;
+    background: none;
+    font-weight: 600;
+}
+.nextImgHover {
+    border: none;
+        position: relative;
+        display: inline-block;
+        border: none;
+        background: none;
+        font-weight: 600;
+}
+.nextImgHover::after {
+content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(1);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    animation: nextImgHover  0.5s linear alternate;
+}
+
+.nextImg::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(1);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+@keyframes nextImgHover {
+    0% {
+        transform: scale(1);
+        transform-origin: bottom left;
+    }
+
+ 
+    100% {
+        transform: scale(0);
+            transform-origin: bottom left;
+    }
+}
+
+.nextImg:hover::after {
+    transform: scale(0);
+    transform-origin: bottom left;
+}
+
+.btnExpore {
+    border: none;
+    position: relative;
+        display: inline-block;
+        border: none;
+    background: none;
+    font-weight: 600;
+}
+
+.btnExpore::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(1);
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.btnExpore:hover::after {
+    transform: scale(0);
+    transform-origin: bottom left;
+}
+.better-convos-title ,.connext-with-title{
+    font-weight: 600;
+    line-height: 0.8;
+}
+.better-convos div div button {
+    font-weight: 600;
+    border: none;
+}
+.better-convos div div button:hover {
+    background-color: lightgray;
+}
+
+.connext-with {
+    background-color: rgb(240 235 227);
+}
+.connext-with div div .connext-with-span,.buttonComponent {
+    font-weight: 600;
+    position: relative;
+        display: inline-block;
+    border: none;
+}
+
+.connext-with-text {
+    line-height: 0.8;
+    font-weight: 600;
+}
+.connext-with div div .connext-with-span::after ,.buttonComponent::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(1);
+    height: 2px;
+left: 0;
+ bottom: 0;
+background-color: #000;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+    
+}
+.connext-with div div .connext-with-span:hover:after,.buttonComponent:hover::after {
+transform: scale(0);
+transform-origin: bottom left;
+}
+.impactful {
+    background-color: #f8f8f9;
+}
+.howto {
+    background-color: #e8e8e9;
+}
